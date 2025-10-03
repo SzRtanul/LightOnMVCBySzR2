@@ -1,0 +1,14 @@
+.LightOn{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.lampa{
+    width: 16px;
+    height: 16px;
+    background-color: green;
+}
+
+.vilagit{
+    background-color: yellow;
+}
