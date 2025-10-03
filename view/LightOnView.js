@@ -27,6 +27,10 @@ export default class LightOnView {
 
     }
 
+    doEredmenyeketKiir(){
+        this.environment.getElementsByClassName("eredmenyek")[0].innerHTML = "Gratulálok! Sikerült lekapcsolnod az összes lámpát.";
+    }
+
     getLampak(){
         return this.lampak;
     }

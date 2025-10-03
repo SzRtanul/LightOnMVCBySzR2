@@ -5,13 +5,14 @@ export default class LightOn{
         this.hossz=oszlop*oszlop;
         this.table=[];
         this.nyert=false;
+        this.vilagit=1;
 
         for(let i = 0; i<this.hossz; i++){         
             this.table.push(false);
         }
         const rand = Math.floor(Math.random()*this.hossz);
         console.log(rand)
-        this.table[rand] = true;
+       // this.table[rand] = true;
     }
 
     doKattint(hely){
@@ -41,7 +42,7 @@ export default class LightOn{
     }
 
     getVilagit(){
-
+        return this.vilagit;
     }
 
     getNemVilagit(){

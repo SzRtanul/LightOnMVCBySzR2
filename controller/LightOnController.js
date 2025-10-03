@@ -11,7 +11,10 @@ export default class LightOnController{
         for(const button of view.getLampak()){
             const it = i;
             button.addEventListener("click", ()=>{
-                this.#kattint(it);
+                if(!model.getNyert()){
+                    this.#kattint(it);
+                    if(model.getNyert()) view.doEredmenyeketKiir();
+                } 
             });
             i++;
         }
